@@ -52,11 +52,13 @@ RECEIVE_SMS: To listen for the #WHERE# command from your trusted numbers.
 
 READ_SMS (Optional): If granted, this permission is used only to display SafetyRing alerts that you yourself have received, inside the app’s history view. It is never used to read general SMS messages, never uploaded, and can be denied without breaking core SOS features.
 
-c) Phone Calls (READ_PHONE_STATE & Call Screening Role)
+c) Phone Permissions (READ_PHONE_STATE & Call Screening Role)
 
-Used to detect incoming and missed calls from your trusted contacts to trigger an automatic SMS reply.
+Used only to detect incoming and missed calls from your trusted contacts so SafetyRing can trigger an automatic SOS reply.
 
-We do not record audio, log call history, or upload call data.
+We do not access device identifiers (IMEI, IMSI), do not record audio, and do not log or upload call history.
+
+This permission is required solely to enable the SOS trigger on calls from trusted contacts.
 
 d) Contacts (READ_CONTACTS)
 
