@@ -1,6 +1,6 @@
 Privacy Policy for SafetyRing
 
-Effective Date: September 3, 2025
+Effective Date: September 27, 2025
 
 Our core principle is 🛡️ Safety with Privacy. This document explains how we protect you and your data.
 
@@ -22,7 +22,7 @@ Contact Us
 
 1. 🔒 The Golden Rule: We Do Not Store Your Data
 
-SafetyRing is a serverless application. We do not run cloud servers, require accounts, or collect and store your personal data.
+MySafetyRing is a serverless application. We do not run cloud servers, require accounts, or collect and store your personal data.
 
 No cloud & no accounts.
 
@@ -68,7 +68,7 @@ Contact information is never uploaded or shared.
 
 3. 📍 Background Location Disclosure
 
-SafetyRing requires Background Location to deliver Safe Place alerts and SOS responses reliably, even when the app is closed.
+MySafetyRing requires Background Location to deliver Safe Place alerts and SOS responses reliably, even when the app is closed.
 
 Users are clearly informed in-app before enabling this feature.
 
@@ -90,7 +90,7 @@ Uninstalling the app permanently removes all of this data.
 
 5. 👶 Children’s Privacy
 
-SafetyRing is not directed to children under the age of 13. Because it uses SMS and location features, it is intended for adult users. Parents or guardians should supervise if installed by minors. We do not knowingly collect personal information from children.
+MySafetyRing is not directed to children under the age of 13. Because it uses SMS and location features, it is intended for adult users. Parents or guardians should supervise if installed by minors. We do not knowingly collect personal information from children.
 
 6. 📝 Changes to This Privacy Policy
 
@@ -98,10 +98,10 @@ We may update this policy from time to time by posting a new version on this pag
 
 7. ✉️ Contact Us
 
-Support Email: safetyring.100@gmail.com
+Support Email: mysafetyring.privacyfirst@gmail.com
 
 Project URL: https://140.238.240.59/SafetyRing
 
-We never upload your data. SafetyRing runs entirely on your device.
+We never upload your data. MySafetyRing runs entirely on your device.
 
-© 2025 SafetyRing. All rights reserved.
+© 2025 MySafetyRing. All rights reserved.
