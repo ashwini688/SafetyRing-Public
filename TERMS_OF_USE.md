@@ -1,6 +1,6 @@
-# Terms of Use for SafetyRing
+# Terms of Use for MySafetyRing
 
-**Effective Date:** September 3, 2025
+**Effective Date:** September 27, 2025
 
 ---
 
@@ -21,11 +21,11 @@
 
 ### 1. ✅ Acceptance of Terms
 
-By installing, accessing, or using the SafetyRing mobile application ("the app"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, you may not use the app. These Terms constitute a legal agreement between you and the developer of SafetyRing ("we," "us," or "our").
+By installing, accessing, or using the SafetyRing mobile application ("the app"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, you may not use the app. These Terms constitute a legal agreement between you and the developer of MySafetyRing ("we," "us," or "our").
 
 ### 2. 🚨 Not an Emergency Service
 
-**IMPORTANT:** SafetyRing is **not** a replacement for emergency services (such as police, fire, or medical services). In the event of an emergency, you must contact your local emergency service providers immediately.
+**IMPORTANT:** MySafetyRing is **not** a replacement for emergency services (such as police, fire, or medical services). In the event of an emergency, you must contact your local emergency service providers immediately.
 
 > **Delivery of alerts is not guaranteed.** The functionality of the app, including the sending of SMS messages, the timing of alerts, and the accuracy of location data, is dependent on many factors beyond our control. These include your device's hardware, its operating system, your permission settings, and the reliability of your mobile carrier's network.
 
@@ -37,7 +37,7 @@ By installing, accessing, or using the SafetyRing mobile application ("the app")
 
 ### 4. 🔐 App Permissions & Messaging
 
-SafetyRing requires certain device permissions to function, including but not limited to SMS, Location, Contacts, and Phone State. These permissions are used exclusively to provide the app's core safety features. For a detailed explanation of how we handle your data, please review our [**Privacy Policy**](./PRIVACY_POLICY.md).
+MySafetyRing requires certain device permissions to function, including but not limited to SMS, Location, Contacts, and Phone State. These permissions are used exclusively to provide the app's core safety features. For a detailed explanation of how we handle your data, please review our [**Privacy Policy**](./PRIVACY_POLICY.md).
 
 ### 5. 🚫 Prohibited Uses
 
@@ -69,10 +69,8 @@ We may modify these Terms from time to time. We will post the most current versi
 
 ### • ✉️ Contact Us
 If you have any questions about these Terms, please contact us:
--   **Email:** [safetyring.100@gmail.com](mailto:safetyring.100@gmail.com)
+-   **Email:** [mysafetyring.privacyfirst@gmail.com](mailto:mysafetyring.privacyfirst@gmail.com)
 -   **Project URL:** [https://140.238.240.59/SafetyRing](https://140.238.240.59/SafetyRing)
 
-> *Disclaimer: This document is a template and is not a substitute for legal advice. You should consult with a legal professional to ensure it meets the specific needs and legal requirements of your jurisdiction.*
 
----
-© 2025 SafetyRing. All rights reserved.
+© 2025 MySafetyRing. All rights reserved.
