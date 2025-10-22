@@ -1,107 +1,136 @@
-Privacy Policy for SafetyRing
+Privacy Policy for MySafetyRing
 
-Effective Date: September 27, 2025
+Effective Date: October 22, 2025
 
-Our core principle is 🛡️ Safety with Privacy. This document explains how we protect you and your data.
-
-On this page
-
-The Golden Rule: We Do Not Store Your Data
-
-Information the App Uses (And Why)
-
-Background Location Disclosure
-
-Data Storage and Security
-
-Children’s Privacy
-
-Changes to This Privacy Policy
-
-Contact Us
+🛡️ Core Principle: Safety with Privacy
+MySafetyRing is designed so that your personal information stays with you.
+We never collect, store, or share your data — everything runs securely on your own device.
 
 1. 🔒 The Golden Rule: We Do Not Store Your Data
 
-MySafetyRing is a serverless application. We do not run cloud servers, require accounts, or collect and store your personal data.
+MySafetyRing is a serverless safety application.
 
-No cloud & no accounts.
+We do not run cloud servers, require accounts, or collect or store your personal data.
 
-No collection of your personal information, location history, or contacts.
+No cloud. No accounts. No analytics.
 
-All your data (trusted contacts, “Safe Places,” logs) stays on your device.
+All your information — trusted contacts, “Safe Places,” and logs — stays entirely on your device.
 
-SMS alerts travel directly between you and your trusted contacts via your mobile carrier; SafetyRing never sees or stores the content of these messages.
+SMS alerts travel directly between you and your trusted contacts via your mobile carrier.
+SafetyRing never sees or stores the content of these messages.
 
-2. 📱 Information the App Uses (And Why)
+✅ We do not share any personal or device data with third parties.
+SafetyRing contains no ads, analytics, or tracking SDKs.
 
-To provide its safety features, SafetyRing requests only the permissions it needs to function.
+2. 📱 Information the App Uses (and Why)
+
+To provide its safety features, SafetyRing requests only the permissions needed for its core functions.
 
 a) Location (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION, ACCESS_BACKGROUND_LOCATION)
 
-Emergency Replies: To include your live coordinates in SMS alerts when triggered by an SOS, a missed call from a trusted contact, or a #WHERE# command.
+Used to include your live coordinates in SMS alerts triggered by:
 
-Safe Place Alerts: The geofencing feature uses background location to automatically send alerts when you enter or leave a designated area.
+SOS button
 
-Our Commitment: Location is accessed only when a trigger occurs and is shared only with contacts you select.
+Missed call from a trusted contact
 
-b) SMS (SEND_SMS, RECEIVE_SMS, READ_SMS)
+#WHERE# command
 
-SEND_SMS: To send alert text messages to your trusted contacts.
+Also used by Safe Places (Geofence) to automatically send alerts when you enter or leave a saved area.
 
-RECEIVE_SMS: To listen for the #WHERE# command from your trusted numbers.
+Our commitment:
+Location is accessed only when a trigger occurs and is shared only with your selected contacts.
 
-READ_SMS (Optional): If granted, this permission is used only to display SafetyRing alerts that you yourself have received, inside the app’s history view. It is never used to read general SMS messages, never uploaded, and can be denied without breaking core SOS features.
+b) SMS (SEND_SMS, RECEIVE_SMS)
+
+SEND_SMS: Used to send alert text messages to your trusted contacts.
+
+RECEIVE_SMS: Used to listen for the #WHERE# command from trusted contacts.
+
+READ_SMS (previously optional):
+Older versions used this only to display SafetyRing alerts you received, within your own app history.
+New versions no longer request or use this permission.
 
 c) Phone Permissions (READ_PHONE_STATE & Call Screening Role)
 
-Used only to detect incoming and missed calls from your trusted contacts so SafetyRing can trigger an automatic SOS reply.
+Used only to detect incoming or missed calls from trusted contacts to trigger SOS replies automatically.
 
-We do not access device identifiers (IMEI, IMSI), do not record audio, and do not log or upload call history.
+We do not access device identifiers (IMEI/IMSI), record audio, or upload call logs.
 
-This permission is required solely to enable the SOS trigger on calls from trusted contacts.
+Required solely for call-based SOS triggers.
 
 d) Contacts (READ_CONTACTS)
 
-Used only to let you easily pick your trusted contacts from your address book.
+Used only to help you easily select your trusted contacts.
 
-Contact information is never uploaded or shared.
+Contact information is never uploaded, stored, or shared.
 
 3. 📍 Background Location Disclosure
 
-MySafetyRing requires Background Location to deliver Safe Place alerts and SOS responses reliably, even when the app is closed.
+MySafetyRing may use Background Location to ensure that SOS or Safe Place alerts work even if the app is closed.
 
-Users are clearly informed in-app before enabling this feature.
+You are clearly informed before enabling background features.
 
-The permission is optional until you choose to enable Safe Places.
+Background location is used only for:
 
-Background location is used strictly for geofence entry/exit triggers and is never uploaded.
+Geofence entry/exit events
+
+SOS triggers when offline or screen-locked
+
+You can disable background access anytime in your device settings.
+
+No background data is ever uploaded to any server.
+
+📢 Google Play Disclosure:
+SafetyRing accesses background location only to trigger safety alerts and geofence notifications, even when the app is not in use.
 
 4. 🗄️ Data Storage and Security
 
-All necessary data is stored in the app’s private, secure storage on your device, including:
+All necessary information is stored locally in your app’s secure private storage.
 
-Your trusted contacts and their phone numbers.
+Stored on device:
 
-Your "Safe Places" (name, latitude, longitude, radius).
+Trusted contacts (names and phone numbers)
 
-A temporary log of recent alerts (kept for approximately 48 hours for your reference).
+Safe Places (name, latitude, longitude, radius)
 
-Uninstalling the app permanently removes all of this data.
+Recent alert logs (temporary, ~48 hours)
 
-5. 👶 Children’s Privacy
+When you uninstall the app, all data is permanently deleted.
+Nothing is backed up or synced externally.
+All on-device data resides in the app’s sandbox (/data/data/com.ashwini.safetyring) and cannot be accessed by other apps.
 
-MySafetyRing is not directed to children under the age of 13. Because it uses SMS and location features, it is intended for adult users. Parents or guardians should supervise if installed by minors. We do not knowingly collect personal information from children.
+5. 🚫 Third-Party Services
 
-6. 📝 Changes to This Privacy Policy
+MySafetyRing does not use analytics, advertising, or tracking SDKs.
 
-We may update this policy from time to time by posting a new version on this page. We encourage you to review it periodically.
+No external APIs are called except Google Maps (for in-app map display only).
 
-7. ✉️ Contact Us
+If future updates ever integrate new third-party components, this policy will be updated and re-notified.
 
-Support Email: mysafetyring.privacyfirst@gmail.com
+6. 👶 Children’s Privacy
 
-Project URL: https://140.238.240.59/SafetyRing
+MySafetyRing is not directed to children under 13.
 
-We never upload your data. MySafetyRing runs entirely on your device.
+Because it uses SMS and location services, it is intended for adults.
 
-© 2025 MySafetyRing. All rights reserved.
+Parents or guardians should supervise any minor’s use.
+
+We do not knowingly collect personal data from children.
+
+7. 📝 Changes to This Privacy Policy
+
+We may update this policy periodically to reflect improvements or compliance requirements.
+The latest version will always be available on our official website and app listing.
+Significant changes will be communicated clearly in-app or via update notes.
+
+8. ✉️ Contact Us
+
+Email: mysafetyring.privacyfirst@gmail.com
+
+Website: https://140.238.240.59/SafetyRing
+
+We never upload your data.
+MySafetyRing runs entirely on your device — private by design, safe by purpose.
+
+© 2025 MySafetyRing. All rights reserved
