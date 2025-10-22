@@ -1,6 +1,6 @@
 # Terms of Use for MySafetyRing
 
-**Effective Date:** September 27, 2025
+**Effective Date:** October 22, 2025
 
 ---
 
