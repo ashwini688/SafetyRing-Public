@@ -34,22 +34,14 @@ SOS button
 
 Missed call from a trusted contact
 
-#WHERE# command
-
 Also used by Safe Places (Geofence) to automatically send alerts when you enter or leave a saved area.
 
 Our commitment:
 Location is accessed only when a trigger occurs and is shared only with your selected contacts.
 
-b) SMS (SEND_SMS, RECEIVE_SMS)
+b) SMS (SEND_SMS)
 
 SEND_SMS: Used to send alert text messages to your trusted contacts.
-
-RECEIVE_SMS: Used to listen for the #WHERE# command from trusted contacts.
-
-READ_SMS (previously optional):
-Older versions used this only to display SafetyRing alerts you received, within your own app history.
-New versions no longer request or use this permission.
 
 c) Phone Permissions (READ_PHONE_STATE & Call Screening Role)
 
