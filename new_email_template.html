@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MySafetyRing - Marketing Flyer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ---------------- RESET ---------------- */
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    /* ---------------- PAGE BACKGROUND (TRICOLOUR) ---------------- */
+    body{
+      font-family:'DM Sans',sans-serif;
+
+      /* India Tricolour backdrop (clean, light, readable) */
+      background: linear-gradient(180deg,
+        rgba(255,153,51,0.22) 0%,
+        rgba(255,255,255,1.00) 48%,
+        rgba(19,136,8,0.18) 100%
+      );
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      padding:30px;
+    }
+
+    /* ---------------- FLYER ---------------- */
+    .flyer-container{
+      width:1200px;
+      height:1600px;
+      background:white;
+      border-radius:40px;
+      box-shadow:0 30px 80px rgba(0,0,0,.15);
+      position:relative;
+      overflow:hidden;
+
+      /* safe bottom space so footer never touches edge */
+      padding-bottom:30px;
+    }
+
+    /* Soft Tricolor Blobs */
+    .tricolor-accent{
+      position:absolute;
+      top:-120px;
+      right:-140px;
+      width:520px;height:520px;
+      background:radial-gradient(circle,
+        rgba(255,153,51,.22),
+        rgba(255,255,255,.18),
+        rgba(19,136,8,.20)
+      );
+      filter:blur(90px);
+      opacity:0.9;
+    }
+
+    .tricolor-accent-2{
+      position:absolute;
+      bottom:-160px;
+      left:-160px;
+      width:540px;height:540px;
+      background:radial-gradient(circle,
+        rgba(19,136,8,.22),
+        rgba(255,255,255,.18),
+        rgba(255,153,51,.15)
+      );
+      filter:blur(90px);
+      opacity:0.85;
+    }
+
+    /* ---------------- HEADER ---------------- */
+    .header{
+      text-align:center;
+      padding:50px 60px 20px;
+      position:relative;
+      z-index:3;
+    }
+
+    .logo{
+      width:100px;
+      height:100px;
+      border-radius:50%;
+      background:linear-gradient(135deg,#FD5E53,#3b82f6);
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 12px 36px rgba(0,0,0,.28);
+    }
+
+    .logo img{
+      width:85px;
+      height:85px;
+      object-fit:contain;
+      border-radius:50%;
+      background:#ffffff;
+      padding:8px;
+    }
+
+    .app-title{
+      font-family:Poppins;
+      font-size:48px;
+      font-weight:700;
+      background:linear-gradient(180deg,#2563eb,#1d4ed8);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      margin-top:8px;
+    }
+
+    .tagline{
+      font-size:18px;
+      font-weight:600;
+      color:#FD5E53;
+      margin-top:8px;
+    }
+
+    .sub-tagline{
+      font-size:16px;
+      color:#2563eb;
+      opacity:0.85;
+    }
+
+    /* ---------------- STORY BOX ---------------- */
+    .story-box{
+      width:920px;
+      margin:0 auto 15px;
+      padding:12px 16px;
+      border-radius:18px;
+      background:rgba(255,255,255,0.92);
+
+      border:2px solid rgba(255,255,255,0.70);
+      background-image:
+        linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+        linear-gradient(135deg,
+          rgba(255,153,51,0.55),
+          rgba(255,255,255,0.55),
+          rgba(19,136,8,0.50)
+        );
+      background-origin:border-box;
+      background-clip:padding-box, border-box;
+
+      box-shadow:0 10px 24px rgba(0,0,0,0.10);
+
+      text-align:left;
+      position:relative;
+      z-index:3;
+
+      backdrop-filter: blur(6px);
+    }
+
+    .story-box::after{
+      content:"";
+      position:absolute;
+      inset:-8px;
+      border-radius:22px;
+      background:linear-gradient(90deg,
+        rgba(255,153,51,0.16),
+        rgba(255,255,255,0.10),
+        rgba(19,136,8,0.14)
+      );
+      filter:blur(18px);
+      opacity:0.85;
+      z-index:-1;
+    }
+
+    .story-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+      align-items:start;
+    }
+
+    .story-title{
+      font-family:Poppins;
+      font-size:13px;
+      font-weight:700;
+      color:#0f172a;
+      margin-bottom:5px;
+    }
+
+    .story-points{
+      font-size:11px;
+      color:#334155;
+      line-height:1.5;
+    }
+
+    .story-line{
+      margin:2px 0;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .story-principle{
+      margin-top:8px;
+      font-size:12px;
+      font-weight:700;
+      color:#2563eb;
+      text-align:center;
+    }
+
+    .story-audience{
+      margin-top:8px;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:8px;
+      font-size:11px;
+      font-weight:700;
+      color:#334155;
+    }
+
+    .aud-pill{
+      background:#eef2ff;
+      border-radius:999px;
+      padding:5px 9px;
+      box-shadow:0 6px 14px rgba(0,0,0,0.06);
+    }
+
+    /* ---------------- FLOATING KEY FEATURE STRIP ---------------- */
+    .key-feature-strip{
+      width:920px;
+      margin:15px auto 0;
+      display:flex;
+      justify-content:center;
+      position:relative;
+      z-index:3;
+    }
+
+    .key-feature-pill{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 16px;
+      border-radius:999px;
+
+      background:rgba(255,255,255,0.92);
+      box-shadow:0 10px 22px rgba(0,0,0,0.10);
+      backdrop-filter: blur(6px);
+
+      /* tricolour fusion ring */
+      border:2px solid rgba(255,255,255,0.70);
+      background-image:
+        linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+        linear-gradient(135deg,
+          rgba(255,153,51,0.55),
+          rgba(255,255,255,0.55),
+          rgba(19,136,8,0.50)
+        );
+      background-origin:border-box;
+      background-clip:padding-box, border-box;
+
+      font-family:Poppins;
+      font-size:13px;
+      font-weight:800;
+      color:#0f172a;
+
+      /* subtle motion */
+      animation:floatLeftRight 6s ease-in-out infinite;
+
+      /* ✅ NEW: tiny glow around the pill */
+      position:relative;
+    }
+
+    /* ✅ NEW: soft glow behind pill */
+    .key-feature-pill::after{
+      content:"";
+      position:absolute;
+      inset:-10px;
+      border-radius:999px;
+
+      /* pink/red Valentine glow */
+      background:radial-gradient(circle at 30% 30%,
+        rgba(255, 77, 109, 0.22),
+        rgba(255, 0, 76, 0.10),
+        rgba(255,255,255,0.00) 65%
+      );
+      filter:blur(14px);
+      opacity:0.95;
+      z-index:-1;
+      pointer-events:none;
+    }
+
+    .key-feature-dot{
+      width:10px;height:10px;
+      border-radius:50%;
+      background:#ef4444;
+      box-shadow:0 0 0 0 rgba(239,68,68,0.55);
+      animation:pulseDot 1.6s ease-in-out infinite;
+      flex:0 0 auto;
+    }
+
+    .key-feature-pill b{
+      color:#2563eb;
+    }
+
+    @keyframes floatLeftRight{
+      0%,100%{ transform:translateX(-18px); }
+      50%{ transform:translateX(18px); }
+    }
+
+    @keyframes pulseDot{
+      0%   { box-shadow:0 0 0 0 rgba(239,68,68,0.55); transform:scale(1); }
+      70%  { box-shadow:0 0 0 14px rgba(239,68,68,0.00); transform:scale(1.08); }
+      100% { box-shadow:0 0 0 0 rgba(239,68,68,0.00); transform:scale(1); }
+    }
+
+    /* ✅ NEW: heartbeat pulse + Valentine gradient on heart */
+    .heart-emoji{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+
+      font-size:18px;
+      line-height:1;
+
+      /* Valentine pink/red gradient fill */
+      background:linear-gradient(180deg, #ff4d6d 0%, #ff0033 55%, #ff7aa2 100%);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+
+      /* pulse animation */
+      animation:heartBeat 1.05s ease-in-out infinite;
+      transform-origin:center;
+      filter: drop-shadow(0 6px 14px rgba(255, 0, 51, 0.22));
+    }
+
+    @keyframes heartBeat{
+      0%   { transform:scale(1);   }
+      20%  { transform:scale(1.18); }
+      40%  { transform:scale(1);   }
+      60%  { transform:scale(1.12); }
+      100% { transform:scale(1);   }
+    }
+
+    /* ---------------- MAIN ---------------- */
+    .main-content{
+      height:850px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position:relative;
+      z-index:2;
+      padding-top:10px;
+    }
+
+    .heart-container{
+      position:relative;
+      width:860px;
+      height:860px;
+    }
+
+    .heart-glow{
+      position:absolute;
+      width:760px;
+      height:760px;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      background:radial-gradient(circle,
+        rgba(59,130,246,.20),
+        rgba(16,185,129,.16),
+        rgba(255,153,51,.14),
+        transparent 70%
+      );
+      border-radius:50%;
+      filter:blur(65px);
+      opacity:0.95;
+    }
+
+    .tricolor-blend{
+      position:absolute;
+      width:560px;height:560px;
+      left:50%;top:50%;
+      transform:translate(-50%,-50%);
+      background:linear-gradient(180deg,
+        rgba(255,153,51,.32),
+        rgba(255,255,255,.22),
+        rgba(19,136,8,.30)
+      );
+      border-radius:50%;
+      filter:blur(55px);
+      opacity:0.95;
+    }
+
+    @keyframes pulseHeart{
+      0%   { transform:translate(-50%,-50%) scale(1); }
+      50%  { transform:translate(-50%,-50%) scale(1.05); }
+      100% { transform:translate(-50%,-50%) scale(1); }
+    }
+
+    .heart-shape{
+      position:absolute;
+      width:650px;height:650px;
+      top:50%;left:50%;
+      transform:translate(-50%,-50%);
+      animation:pulseHeart 2.8s ease-in-out infinite;
+      opacity:0.97;
+      filter: drop-shadow(0 22px 44px rgba(0,0,0,0.12));
+    }
+
+    .heart-shape::before,
+    .heart-shape::after{
+      content:"";
+      position:absolute;
+      width:325px;
+      height:520px;
+      background:linear-gradient(180deg,
+        rgba(255,153,51,0.26) 0%,
+        rgba(255,255,255,0.20) 48%,
+        rgba(19,136,8,0.22) 100%
+      );
+      border-radius:325px 325px 0 0;
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.65),
+        inset 0 -12px 30px rgba(2,6,23,0.06);
+    }
+
+    .heart-shape::before{
+      left:162px;
+      transform:rotate(-45deg);
+      transform-origin:0 100%;
+    }
+
+    .heart-shape::after{
+      left:162px;
+      transform:rotate(45deg);
+      transform-origin:100% 100%;
+    }
+
+    /* ---------------- PHONE ---------------- */
+    .phone-mockup{
+      width:340px;
+      height:705px;
+      background:#000;
+      border-radius:50px;
+      position:absolute;
+      left:50%;top:50%;
+      transform:translate(-50%,-50%);
+      box-shadow:0 40px 120px rgba(0,0,0,.55);
+      overflow:hidden;
+      animation:float 6s ease-in-out infinite;
+      z-index:4;
+    }
+
+    @keyframes float{
+      0%,100%{ transform:translate(-50%,-50%); }
+      50%{ transform:translate(-50%,-60%); }
+    }
+
+    .phone-notch{
+      width:150px;height:30px;
+      background:#000;
+      border-radius:0 0 20px 20px;
+      position:absolute;
+      left:50%;top:0;
+      transform:translateX(-50%);
+      z-index:5;
+    }
+
+    .phone-screen{
+      width:100%;
+      height:100%;
+      background:#0b1220;
+    }
+
+    .phone-screen img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    /* ---------------- FEATURE ICONS ---------------- */
+    .feature-icon{
+      position:absolute;
+      width:150px;height:150px;
+      background:rgba(255,255,255,0.96);
+      border-radius:50%;
+      box-shadow:0 12px 32px rgba(0,0,0,.14);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:16px;
+      z-index:5;
+      backdrop-filter: blur(6px);
+
+      border:2px solid rgba(255,255,255,0.75);
+      background-image:
+        linear-gradient(rgba(255,255,255,0.96), rgba(255,255,255,0.96)),
+        linear-gradient(135deg,
+          rgba(255,153,51,0.70),
+          rgba(255,255,255,0.55),
+          rgba(19,136,8,0.65)
+        );
+      background-origin:border-box;
+      background-clip:padding-box, border-box;
+    }
+
+    .feature-icon::before{
+      font-size:36px;
+      margin-bottom:6px;
+    }
+
+    .feature-title{
+      font-size:12px;
+      font-weight:800;
+      color:#0f172a;
+      line-height:1.2;
+    }
+
+    .feature-desc{
+      font-size:9.5px;
+      color:#64748b;
+      line-height:1.25;
+      margin-top:4px;
+    }
+
+    .icon1{ top:120px; left:100px; }
+    .icon2{ top:120px; right:100px; }
+    .icon3{ top:360px; left:100px; }
+    .icon4{ top:360px; right:100px; }
+    .icon5{ top:600px; left:100px; }
+    .icon6{ top:600px; right:100px; }
+
+    .icon1::before{content:"📵";}
+    .icon2::before{content:"🚨";}
+    .icon3::before{content:"👥";}
+    .icon4::before{content:"📍";}
+    .icon5::before{content:"🏠";}
+    .icon6::before{content:"🔋";}
+
+    /* ---------------- DOWNLOAD SECTION (2 buttons + QR inside each) ---------------- */
+    .download-section{
+      position:absolute;
+      bottom:91px;
+      width:100%;
+      text-align:center;
+      z-index:3;
+    }
+
+    .store-links{
+      display:flex;
+      justify-content:center;
+      gap:140px;
+      align-items:center;
+      margin-bottom:26px;
+    }
+
+    /* each card: button next to QR */
+    .store-card{
+      display:flex;
+      align-items:center;
+      gap:16px;
+    }
+
+    .store-btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:12px;
+
+      background:#0f172a;
+      color:#fff;
+      padding:14px 20px;
+      border-radius:18px;
+      text-decoration:none;
+      font-weight:800;
+      font-size:15px;
+      transition:0.25s ease;
+      box-shadow:0 10px 22px rgba(0,0,0,0.12);
+
+      min-width:190px;
+      white-space:nowrap;
+    }
+
+    .store-btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 14px 28px rgba(0,0,0,0.18);
+    }
+
+    .store-btn img{
+      width:70px;
+      height:50px;
+      object-fit:contain;
+    }
+
+    .store-btn.play{ background:#111827; }
+    .store-btn.youtube{ background:#ff0000; }
+
+    .qr-code{
+      width:140px;
+      height:140px;
+      background:#ffffff;
+      padding:10px;
+      border-radius:18px;
+      box-shadow:0 12px 28px rgba(0,0,0,0.12);
+    }
+
+    .qr-code img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      display:block;
+    }
+
+    /* ---------------- FOOTER ---------------- */
+    .footer{
+      position:absolute;
+      bottom:26px;
+      width:100%;
+      text-align:center;
+      z-index:3;
+    }
+
+    .footer-tagline{
+      font-size:20px;
+      font-weight:700;
+      color:#0f172a;
+      margin-top:10px;
+      margin-bottom:14px;
+    }
+
+    .footer-features{
+      display:inline-flex;
+      gap:20px;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(90deg,
+        #ffb703,
+        #fff7cc,
+        #9ae6b4
+      );
+      padding:10px 22px;
+      border-radius:40px;
+      color:#1f2933;
+      font-size:14px;
+      font-weight:600;
+      box-shadow:0 10px 22px rgba(0,0,0,0.15);
+    }
+
+    .footer-features div::before{
+      content:"• ";
+      color:#2563eb;
+      font-weight:900;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="flyer-container">
+    <div class="tricolor-accent"></div>
+    <div class="tricolor-accent-2"></div>
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="logo">
+        <img id="appLogo" alt="MySafetyRing Logo">
+      </div>
+
+      <h1 class="app-title">MySafetyRing</h1>
+      <p class="tagline">Privacy-First Next-Gen Global Safety App</p>
+      <p class="sub-tagline">Safety without surveillance</p>
+    </div>
+
+    <!-- STORY BOX -->
+    <div class="story-box">
+      <div class="story-grid">
+
+        <div>
+          <div class="story-title">The gap in today's Family Safety Apps: Privacy & Trust</div>
+          <div class="story-points">
+            <div class="story-line">• 📊 Personal data collection is often the main goal</div>
+            <div class="story-line">• ☁️ No 100% privacy guarantee for sensitive personal data</div>
+            <div class="story-line">• 🔓 Risk of data being shared or leaked to third parties</div>
+            <div class="story-line">• 👁️ Continuous tracking that feels like surveillance</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="story-title">How MySafetyRing fills the gap</div>
+          <div class="story-points">
+            <div class="story-line">MySafetyRing is built on four simple principles:</div>
+            <div class="story-line">• 🔐 Your privacy is our top priority</div>
+            <div class="story-line">• 🚫 We collect no personal data at all</div>
+            <div class="story-line">• ⚡ On-demand — works only when you need it</div>
+            <div class="story-line">• 📱 Your data always stays on your device</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="story-principle">Who is MySafetyRing for?</div>
+      <div class="story-audience">
+        <span class="aud-pill">👨‍👩‍👧‍👦 Families</span>
+        <span class="aud-pill">👩 Women</span>
+        <span class="aud-pill">🎓 Students</span>
+        <span class="aud-pill">💼 Working Professionals</span>
+        <span class="aud-pill">🏭 Phone-Restricted Workplaces</span>
+        <span class="aud-pill">🔐 Privacy-Focused Individuals</span>
+      </div>
+    </div>
+
+    <!-- FLOATING KEY FEATURE -->
+    <div class="key-feature-strip">
+      <div class="key-feature-pill">
+        <span class="key-feature-dot"></span>
+        <span>This Valentine’s Day <span class="heart-emoji">❤</span> for every Heartbeat that matters — Protect the ones you Love, Silently!!!.</span>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main-content">
+      <div class="heart-container">
+
+        <div class="heart-glow"></div>
+        <div class="heart-shape"></div>
+        <div class="tricolor-blend"></div>
+
+        <!-- PHONE -->
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img id="appScreenshot" alt="MySafetyRing App Screenshot">
+          </div>
+        </div>
+
+        <!-- FEATURES -->
+        <div class="feature-icon icon1">
+          <div class="feature-title">Missed Call Alert</div>
+          <div class="feature-desc">If a trusted contact's call goes unanswered, your location is shared via SMS</div>
+        </div>
+
+        <div class="feature-icon icon2">
+          <div class="feature-title">SOS Emergency</div>
+          <div class="feature-desc">One-tap alert, sends your live location to trusted contacts via SMS</div>
+        </div>
+
+        <div class="feature-icon icon3">
+          <div class="feature-title">Trusted Contacts</div>
+          <div class="feature-desc">Only people you choose receive alerts</div>
+        </div>
+
+        <div class="feature-icon icon4">
+          <div class="feature-title">Live Location</div>
+          <div class="feature-desc">Shared only when needed</div>
+        </div>
+
+        <div class="feature-icon icon5">
+          <div class="feature-title">Safe Places</div>
+          <div class="feature-desc">Alerts sent when you enter, exit, or stay in a defined safe place</div>
+        </div>
+
+        <div class="feature-icon icon6">
+          <div class="feature-title">Battery Low</div>
+          <div class="feature-desc">When battery is low, trusted contacts are notified automatically</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DOWNLOAD SECTION (2 buttons only) -->
+    <div class="download-section">
+      <div class="store-links">
+
+        <!-- GOOGLE PLAY -->
+        <div class="store-card">
+          <a id="playLink" href="#" target="_blank" class="store-btn play">
+            <img id="playLogo" alt="Google Play">
+             Get it on Google Play
+          </a>
+          <div class="qr-code">
+            <img id="qrPlay" alt="Play Store QR">
+          </div>
+        </div>
+
+        <!-- YOUTUBE -->
+        <div class="store-card">
+          <div class="qr-code">
+            <img id="qrYt" alt="YouTube QR">
+          </div>
+          <a id="ytLink" href="#" target="_blank" class="store-btn youtube">
+            <img id="ytLogo" alt="YouTube">
+            Watch on YouTube
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="footer-tagline">Privacy by default • No surveillance • Designed for Global Digital Safety</div>
+      <div class="footer-features">
+        <div>Your Trust is our Business Model</div>
+        <div>All decision happen on your Device</div>
+        <div>No Internet Connectivity Required</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- IMAGE LOADER -->
+  <script>
+    // REQUIRED FILES IN SAME FOLDER AS THIS HTML:
+    // app_screenshot.png
+    // mysafetyring_logo.png
+    // google_play_logo.png
+    // youtube_logo.png
+    // qr_playstore.png
+    // qr_youtube.png
+
+    // Main images
+    document.getElementById("appScreenshot").src = "./app_screenshot.png";
+    document.getElementById("appLogo").src = "./mysafetyring_logo.png";
+
+    // Logos
+    document.getElementById("playLogo").src = "./google_play_logo.png";
+    document.getElementById("ytLogo").src = "./youtube_logo.png";
+
+    // QR images
+    document.getElementById("qrPlay").src = "./qr_playstore.png";
+    document.getElementById("qrYt").src = "./qr_youtube.png";
+
+    // Links (REPLACE these with your real URLs)
+    document.getElementById("playLink").href = "https://play.google.com/store/apps/details?id=com.ashwini.safetyring";
+    document.getElementById("ytLink").href   = "https://www.youtube.com/watch?v=Hz5vDShz3Kw";
+  </script>
+
+</body>
+</html>
